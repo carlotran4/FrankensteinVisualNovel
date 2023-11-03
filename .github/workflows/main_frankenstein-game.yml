@@ -28,7 +28,7 @@ jobs:
           npm run test --if-present
 
       - run: |
-          zip -r node-app.zip .
+          Compress-Archive -Path . -DestinationPath node-app.zip -Force
     
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
@@ -49,7 +49,7 @@ jobs:
         with:
           name: node-app  
       - run: |
-         unzip node-app.zip
+         Expand-Archive -Path node-app.zip -Destination . -Force
          rm node-app.zip
 
       - name: 'Deploy to Azure Web App'
