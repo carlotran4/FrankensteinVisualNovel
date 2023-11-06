@@ -1,0 +1,28 @@
+.titlePageButtons{
+    width:50%;
+    margin-left: 25%;
+    margin-right:25%;
+    display: inline-block;
+  }
+  
+  .descButton{  
+    width: calc(33.3333% - 5px);
+    margin-top:10px;
+    font-size: 30px;
+  }
+  
+  #aboutButton{
+    float:left;
+    margin-right:7.5px;
+  }
+  
+  #sourceCodeButton{
+    float:right;
+  }
+  
+  
+  #playButton{
+    width:100%;
+    font-size: 75px;
+    height:100px !important;
+  }
