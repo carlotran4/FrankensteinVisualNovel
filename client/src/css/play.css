@@ -1,0 +1,10 @@
+
+#nextButton {
+    height:35px;
+    float: right;
+}
+
+#scenarioFieldbox {
+    opacity: 0.25;
+    background-color: #131613;
+}

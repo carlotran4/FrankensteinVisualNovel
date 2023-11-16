@@ -1,6 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client';
-import './Home.css'
+import React from 'react';
+import {Link}  from "react-router-dom";
+import '../css/Home.css';
 
 function Title(){
     return (
@@ -14,7 +14,9 @@ function Title(){
   function Buttons(){
     return(
       <div class="titlePageButtons">
-        <button id="playButton">Play</button>
+        <Link to="/play">
+          <button id="playButton">Play</button>
+        </Link>
         <button class="descButton" id="aboutButton">About</button> <button class="descButton" id="sourceCodeButton">Source Code</button> <button class="descButton" id="plagiarismButton">Plagiarism?</button>
       </div>
     )

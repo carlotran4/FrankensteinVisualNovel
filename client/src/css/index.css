@@ -16,6 +16,14 @@ h2 {
   text-align: center;
 }
 
+p {
+  color: #f5f1ee;
+}
+
+span {
+  color: #f5f1ee;
+}
+
 /* CSS */
 button {
   background-color: #04a311;

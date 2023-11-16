@@ -1,8 +1,5 @@
-import fs from "fs"
-
-
 export const textToImage = async (prompt) => {
-    console.log("beginning generation...")
+    console.log("beginning image generation...")
     const path =
         "https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image";
 
@@ -13,22 +10,16 @@ export const textToImage = async (prompt) => {
     };
 
     const body = {
-        steps: 40,
-        width: 1024,
-        height: 1024,
+        steps: 25,
+        height:768,
+        width:1344,
         seed: 0,
         cfg_scale: 5,
         samples: 1,
         text_prompts: [
         {
-            "text": prompt,
-            "weight": 1
-        },
-        {
-            "text": "blurry, bad, black and white",
-            "weight": -1
-        }
-        ],
+            "text": prompt
+        }],
     };
 
     const response = await fetch(
