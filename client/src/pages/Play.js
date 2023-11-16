@@ -55,7 +55,7 @@ function Choices(props){
         return(
             <div>
                 <button onClick={()=>{
-                    props.setMessage(choice.substring(0,2));
+                    props.setMessage({content: choice.substring(0,1)});
                     props.setIsScenario(true);
                     props.setJsonData(null);
                     }}>{choice}</button>
@@ -82,7 +82,7 @@ function OpenAIRequest(props) {
             headers: {
                 'Content-Type':'application/json'
             },
-            body: JSON.stringify({message : message}),
+            body: JSON.stringify({message : message.content}),
         })
         .then((res) => res.json())
         .then((json) => setJsonData(json))
@@ -119,7 +119,7 @@ export default function Play() {
     
     return(
         <>
-            <OpenAIRequest startMessage="Restart the novel with a different scenario"/>
+            <OpenAIRequest startMessage={{content:"Restart the novel with a different scenario"}}/>
         </>
     )
 }
