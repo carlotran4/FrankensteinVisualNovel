@@ -19,52 +19,9 @@
     {
       "role": "assistant",
       "content": "You approach your creation with a sense of curiosity and excitement. Your scientific mind compels you to unravel the mysteries that lie within this extraordinary being. You meticulously examine the physical construction of your creation, noting the intricate details of each body part you brought to life.\n\nAs you delve deeper into your analysis, you start to understand the immense potential and power this creature possesses. It becomes clear to you that you have created something beyond your wildest imagination. A mix of fear and fascination takes hold of your heart. \n\nWhat do you do next?\n\n%1. Conduct experiments to test the limits of your creation's strength and endurance.%\n\n%2. Engage in dialogue with your creation, attempting to understand its thoughts and feelings.%\n\n%3. Document your findings and research, hoping to share your amazing discovery with the world.%\n\n%4. Retreat from your laboratory and take a moment to reflect on the implications of your creation.%\n\n{Create an image of Victor Frankenstein examining his creation with awe and curiosity.}"
-    },
-    {
-      "role": "user",
-      "content": "Restart the novel with a different scenario"
-    },
-    {
-      "role": "assistant",
-      "content": "You are Victor Frankenstein, a brilliant young scientist consumed by an insatiable thirst for knowledge. Obsessed with defying the boundaries of life and death, you have dedicated yourself to the pursuit of creating life. After years of grueling work, you stand on the precipice of success.\n\nWhat do you do?\n\n%1. Proceed with caution and ethical considerations, ensuring your creation is in alignment with societal norms.%\n\n%2. Plunge forward without heeding any moral constraints, driven solely by your ambition and curiosity.%\n\n{Create an image of Victor Frankenstein standing before a laboratory table, brimming with excitement and anticipation.}"
-    },
-    {
-      "role": "user",
-      "content": "Restart the novel with a different scenario"
-    },
-    {
-      "role": "assistant",
-      "content": "You are Victor Frankenstein, a young scientist on a quest to uncover the secrets of life itself. In your pursuit, you have managed to assemble various body parts and bring them to life. However, the creature you have created exhibits unusual behavior, raising questions about its nature.\n\nWhat do you do?\n\n%1. Conduct a thorough examination of the creature's physical attributes, seeking to understand its peculiarities.%\n\n%2. Engage in conversation with the creature, hoping to gain insight into its thoughts and intentions.%\n\n%3. Seek advice from fellow scholars or mentors, sharing your concerns and seeking guidance.%\n\n%4. Attempt to dismantle the creature and analyze its internal workings, desperate to comprehend its complexities.%\n\n{Create an image of Victor Frankenstein observing the strange behavior of his creation with intense scrutiny.}"
-    },
-    {
-      "role": "user",
-      "content": "Restart the novel with a different scenario"
-    },
-    {
-      "role": "assistant",
-      "content": "You are Victor Frankenstein, a brilliant scientist driven by the desire to conquer death itself. After years of tireless work, you have succeeded in creating life from lifelessness. However, your creation possesses an unexpected level of intelligence and consciousness.\n\nWhat do you do?\n\n%1. Embrace and nurture your creation as a child, teaching and guiding it towards a life of virtue and purpose.%\n\n%2. Reject and disown your creation, driven by fear and unease over its unforeseen capabilities.%\n\n%3. Attempt to control and manipulate your creation, using it as a means to further your own ambitions and desires.%\n\n{Create an image of Victor Frankenstein wrestling with the moral dilemma of what to do with his highly intelligent creation.}"
-    },
-    {
-      "role": "user",
-      "content": "Restart the novel with a different scenario"
-    },
-    {
-      "role": "assistant",
-      "content": "You are Victor Frankenstein, a brilliant scientist consumed by a relentless pursuit of knowledge. Determined to unlock the mysteries of life itself, you have succeeded in bringing a creature to life through your scientific experiments. However, the creature you have created possesses an insatiable appetite for destruction and chaos.\n\nWhat do you do?\n\n%1. Accept responsibility for your creation's actions and seek a way to control or rehabilitate it.%\n\n%2. Flee from your creation, hoping to distance yourself from the havoc it is wreaking.%\n\n%3. Formulate a plan to destroy your creation, knowing that it poses a dangerous threat to humanity.%\n\n{Create an image of Victor Frankenstein torn between his scientific achievement and the consequences it has unleashed upon the world.}"
     }
   ],
   "playData": [
-    {
-      "role": "system",
-      "content": "Please abide by the following bullet points at all times:\n- You are outputting text for a visual novel, which is based on the novel Frankenstein, by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- For this visual novel, provide a new scenario based on the previous choice made by the user.\n- You should provide interactive, text-based scenes. Do not create images.\n- First, provide a scenario, then provide 2-4 options, and then provide a prompt to create an image for the scenario. This prompt should be surrounded by curly braces. \n- Surround each option with percentage signs.\n- Each scenario should not exceed 50 tokens in length.\n- This visual novel should never end, and should keep providing new scenarios.\n"
-    },
-    {
-      "role": "user",
-      "content": "2"
-    },
-    {
-      "role": "assistant",
-      "content": "You take a moment to observe your creation, studying its features with a critical eye. The creature stands before you, towering in stature and yet exuding an air of vulnerability.\n\nAs you inspect it, you notice the intricate nuances of its physique. The broadness of its shoulders, the tension in its muscles, the jagged scars that mar its flesh. Each detail speaks of the trials and tribulations it has endured since its unnatural birth.\n\nYour scientific curiosity pushes you to analyze further. You approach the creature, gently reaching out to touch its arm. The texture beneath your fingertips is unlike anything you have encountered before - firm, yet supple, an amalgamation of life and inanimate matter.\n\nThe being flinches at your touch, its eyes darting nervously. What will you do next?\n\n%1. Comfort the creature, assuring it that you mean no harm.%\n%2. Examine the scars on its body, trying to determine their origin.%\n%3. Step back and give the creature some space, allowing it to adjust to your presence.%\n%4. Engage the creature in conversation, hoping to learn more about its experiences.%\n\n{Create an image of Victor Frankenstein delicately touching the creature's arm, his expression a mix of scientific fascination and genuine concern. Behind them, shelves filled with books and various scientific instruments remind us of their creator's intellectual pursuits.}"
-    }
+
   ]
 }

@@ -3,6 +3,7 @@ import path from 'path';
 import bodyParser from 'body-parser'
 import { textToImage } from "./stability.js"
 import { completePrompt } from './openAi.js';
+import fs from 'fs'
 
 const PORT = process.env.PORT || 3000;
 
@@ -18,6 +19,13 @@ var jsonParser = bodyParser.json()
 app.post("/api/stabilityEndpoint",jsonParser, async (req,res) => {
     const imageData = await textToImage(req.body.message);
     res.json({message: imageData})
+})
+
+app.post("/api/openAiEndpoint/wipePlayData", (req,res) =>{
+  console.log("cleaning playData...")
+  var json = JSON.parse(fs.readFileSync("./messageData.json","utf-8"))
+  json.playData = [];
+  fs.writeFileSync('messageData.json',JSON.stringify(json,null,2))
 })
 
 app.post("/api/openAiEndpoint",jsonParser, async (req,res) => {

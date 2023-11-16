@@ -108,15 +108,19 @@ function OpenAIRequest(props) {
 }
 
 export default function Play() {
-    //Send starting message using componentDidMount()
-    //Creates Option boxes for choices
-    //Creates all text boxes
-    //Holds index value that goes +=1 on next click
-    //update visible box based on index
-    //When choice is clicked-
-        //messageJson = openAIRequest(1 or 2 or 3 or 4)
-        //re-render image with messageJson.Prompt
     
+    React.useEffect( () => {
+        console.log("Mounted")
+        fetch("/api/openAiEndpoint/wipePlayData",{
+            method: 'Post',
+            headers: {
+                'Content-Type':'application/json'
+            }
+        })
+
+    },[])
+
+
     return(
         <>
             <OpenAIRequest startMessage={{content:"Restart the novel with a different scenario"}}/>
