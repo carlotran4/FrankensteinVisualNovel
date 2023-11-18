@@ -1,0 +1,50 @@
+
+#nextButton {
+    height:35px;
+    float: right;
+    margin-left: 20px;
+}
+
+#scenarioFieldbox {
+    position: absolute;
+    z-index: 2;
+    top: 80%;
+    opacity: 0.8;
+    background-color: #131613;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#scenarioPicture, #loadingGif {
+    position: absolute;
+    display: block;
+    height: 85%;
+    top:10%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+#choiceButtonDiv {
+    width: 100%;
+    height: fit-content;
+    margin:auto;
+    position: absolute;
+    top:25%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+
+}
+
+.choiceButtons {
+    margin-top: 10px;
+}
+
+.scenarioText {
+    line-height: 100%;
+    vertical-align: middle;
+}
+
