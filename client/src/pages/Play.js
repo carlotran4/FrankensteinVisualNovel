@@ -1,6 +1,6 @@
 import React from "react" 
 import loadingGif from "../images/loading.gif";
-import "../css/Play.css"
+import "../css/play.css"
 
 function StabilityRequest(props) {
     console.log(props.message);
@@ -20,14 +20,14 @@ function StabilityRequest(props) {
     if(!data){
         return (
             <>
-            <img src={loadingGif} alt="loading gif"/>
+            <img id="loadingGif" src={loadingGif} alt="loading gif"/>
             </>
         )
     }
     else{
         return (
             <>
-                <img src={`data:image/png;base64, ${data}`} alt="Pertinent to the scenario"/>
+                <img id="scenarioPicture" src={`data:image/png;base64, ${data}`} alt="Pertinent to the scenario"/>
             </>
         )
     }
@@ -38,7 +38,7 @@ function Scenarios(props){
     const [scenarioIndex, setScenarioIndex] = React.useState(0);
     return(
         <>
-            <fieldset id="ScenarioFieldbox">
+            <fieldset id="scenarioFieldbox">
                 <span className="scenarioText">{props.array[scenarioIndex]}</span>
                 <button id="nextButton" onClick={()=>{
                     setScenarioIndex(scenarioIndex+1);
@@ -54,7 +54,7 @@ function Choices(props){
     const choices = props.array.map((choice)=>{
         return(
             <div>
-                <button onClick={()=>{
+                <button className="choiceButtons" onClick={()=>{
                     props.setMessage({content: choice.substring(0,1)});
                     props.setIsScenario(true);
                     props.setJsonData(null);
@@ -63,9 +63,9 @@ function Choices(props){
         )
     })
     return(
-        <>
+        <div id="choiceButtonDiv">
             {choices}
-        </>
+        </div>
     )
 }
 

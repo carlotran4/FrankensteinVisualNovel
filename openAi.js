@@ -19,7 +19,8 @@ export const completePrompt = async (prompt) =>{
         "content": prompt
       })
 
-    const response = await openai.chat.completions.create({
+    var response;
+    try { response = await openai.chat.completions.create({
         model: "gpt-3.5-turbo",
         messages: storedMessages,
         temperature: 1,
@@ -27,7 +28,11 @@ export const completePrompt = async (prompt) =>{
         top_p: 1,
         frequency_penalty: 0,
         presence_penalty: 1,
-    });
+    }); }
+    catch(e){
+        console.log(e)
+        return "Sorry, there was an error. Please reload. %1.Sorry, there was an error. Please reload.% %2.Sorry, there was an error. Please reload.% {please reload}"
+    }
 
     storedMessages.push(response.choices[0].message);
     storedMessages = storedMessages.slice(-2);

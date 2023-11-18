@@ -1,6 +1,7 @@
-body {
+html,body {
   margin: 0;
   font-family: 'proxima-nova', sans-serif;
+  height: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #131613;

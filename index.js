@@ -42,6 +42,10 @@ app.post("/api/openAiEndpoint",jsonParser, async (req,res) => {
     var choiceArray = data.match(choiceRegex);
 
     if(choiceArray == null) console.log("null choices")
+    else{
+      console.log("using default choice")
+      choiceArray.push("There was an error. Click this button.")
+    }
 
     for(var i=0; i<choiceArray.length; i++){
         choiceArray[i] = choiceArray[i].slice(1,-1);
