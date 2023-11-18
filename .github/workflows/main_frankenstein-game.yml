@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -28,7 +28,7 @@ jobs:
           npm run test --if-present
 
       - run: |
-           zip release.zip ./* -r
+           Compress-Archive . release.zip
     
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
