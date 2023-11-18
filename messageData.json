@@ -19,7 +19,28 @@
     {
       "role": "assistant",
       "content": "You approach your creation with a sense of curiosity and excitement. Your scientific mind compels you to unravel the mysteries that lie within this extraordinary being. You meticulously examine the physical construction of your creation, noting the intricate details of each body part you brought to life.\n\nAs you delve deeper into your analysis, you start to understand the immense potential and power this creature possesses. It becomes clear to you that you have created something beyond your wildest imagination. A mix of fear and fascination takes hold of your heart. \n\nWhat do you do next?\n\n%1. Conduct experiments to test the limits of your creation's strength and endurance.%\n\n%2. Engage in dialogue with your creation, attempting to understand its thoughts and feelings.%\n\n%3. Document your findings and research, hoping to share your amazing discovery with the world.%\n\n%4. Retreat from your laboratory and take a moment to reflect on the implications of your creation.%\n\n{Create an image of Victor Frankenstein examining his creation with awe and curiosity.}"
+    },
+    {
+      "role": "user",
+      "content": "Restart the novel with a different scenario"
+    },
+    {
+      "role": "assistant",
+      "content": "You are Victor Frankenstein, a young and ambitious scientist driven by an insatiable thirst for knowledge. One stormy night, as lightning illuminates the sky, you find yourself standing at the entrance of your laboratory. A surge of courage and determination courses through your veins as you prepare to embark on your most audacious experiment yet.\n\nWhat do you do?\n\n%1. Gather materials and start assembling body parts to create life.%\n\n%2. Question the ethical implications of your actions and hesitate before proceeding.%\n\n%3. Doubt your own abilities and abandon the idea of creating life altogether.%\n\n{Create an image of Victor Frankenstein standing in front of his laboratory, with stormy clouds overhead and sparks of lightning in the background.}"
     }
   ],
-  "playData": []
+  "playData": [
+    {
+      "role": "system",
+      "content": "Please abide by the following bullet points at all times:\n- You are outputting text for a visual novel, which is based on the novel Frankenstein, by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- For this visual novel, provide a new scenario based on the previous choice made by the user.\n- You should provide interactive, text-based scenes. Do not create images.\n- First, provide a scenario, then provide 2-4 options, and then provide a prompt to create an image for the scenario. This prompt should be surrounded by curly braces. \n- Surround each option with percentage signs.\n- Each scenario should not exceed 50 tokens in length.\n- This visual novel should never end, and should keep providing new scenarios.\n"
+    },
+    {
+      "role": "user",
+      "content": "1"
+    },
+    {
+      "role": "assistant",
+      "content": "You take a deep breath and gather your courage as you step forward, embracing the creature. Tears well up in your eyes as you feel the weight of your actions pressing down on you. You whisper words of apology and remorse, seeking forgiveness from the creature you have brought into existence.\n\nThe creature hesitates at first, but then slowly wraps its arms around you, returning the embrace. You can feel its bony frame trembling against your chest, and you can't help but feel a surge of sympathy for this being that you have created.\n\nAs you hold each other, a profound silence settles over the room, broken only by the sound of your shared breaths. In this moment, it is as if time stands still, and you begin to truly understand the depth of your responsibility towards this creature.\n\nWhat do you do next?\n\n%1. Promise to find a way to make amends for what you've done, dedicating yourself to helping the creature find its place in the world.%\n\n%2. Release the creature from your embrace, overwhelmed by the weight of your guilt, but determined to find a way to undo what you've done.%\n\n{Create an image to capture the poignant moment of Victor Frankenstein and the creature locked in a compassionate embrace, their faces showing a mixture of sorrow, forgiveness, and hope.}"
+    }
+  ]
 }

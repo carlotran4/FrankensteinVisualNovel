@@ -1,10 +1,10 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './css/index.css';
-import Layout from './pages/Layout'
-import Home from './pages/Home';
-import About from './pages/About'
-import Play from './pages/Play'
+import Layout from './pages/Layout.js'
+import Home from './pages/Home.js';
+import About from './pages/About.js'
+import Play from './pages/Play.js'
 
 export default function App() {
   return (

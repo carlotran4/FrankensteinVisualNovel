@@ -41,8 +41,8 @@ app.post("/api/openAiEndpoint",jsonParser, async (req,res) => {
     }
     var choiceArray = data.match(choiceRegex);
 
-    if(choiceArray == null) console.log("null choices")
-    else{
+    if(choiceArray == null){ 
+      console.log("null choices")
       console.log("using default choice")
       choiceArray.push("There was an error. Click this button.")
     }
