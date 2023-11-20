@@ -19,16 +19,16 @@ function StabilityRequest(props) {
 
     if(!data){
         return (
-            <>
+            <div className="mainPictureDiv">
             <img id="loadingGif" src={loadingGif} alt="loading gif"/>
-            </>
+            </div>
         )
     }
     else{
         return (
-            <>
+            <div className="mainPictureDiv">
                 <img id="scenarioPicture" src={`data:image/png;base64, ${data}`} alt="Pertinent to the scenario"/>
-            </>
+            </div>
         )
     }
 
@@ -37,7 +37,7 @@ function StabilityRequest(props) {
 function Scenarios(props){
     const [scenarioIndex, setScenarioIndex] = React.useState(0);
     return(
-        <>
+        <div id="fieldsetDiv">
             <fieldset id="scenarioFieldbox">
                 <span className="scenarioText">{props.array[scenarioIndex]}</span>
                 <button id="nextButton" onClick={()=>{
@@ -45,7 +45,7 @@ function Scenarios(props){
                     if(scenarioIndex>=props.array.length-1) props.setIsScenario(false);
                 }}>Next</button>
             </fieldset>
-        </>
+        </div>
     )
 }
 
@@ -53,12 +53,12 @@ function Choices(props){
 
     const choices = props.array.map((choice)=>{
         return(
-            <div>
+            <div className="individualButtonDiv">
                 <button className="choiceButtons" onClick={()=>{
                     props.setMessage({content: choice.substring(0,1)});
                     props.setIsScenario(true);
                     props.setJsonData(null);
-                    }}>{choice}</button>
+                    }}>{choice}</button> 
             </div>
         )
     })
@@ -102,7 +102,7 @@ function OpenAIRequest(props) {
     )
     return(
         <>
-            <p>Loading...</p>
+            <h2>Waiting for ChatGPT (ChatGPT is slow these days)...</h2>
         </>
     )
 }

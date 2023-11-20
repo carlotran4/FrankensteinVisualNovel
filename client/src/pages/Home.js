@@ -17,7 +17,15 @@ function Title(){
         <Link to="/play">
           <button id="playButton">Play</button>
         </Link>
-        <button class="descButton" id="aboutButton">About</button> <button class="descButton" id="sourceCodeButton">Source Code</button> <button class="descButton" id="plagiarismButton">Plagiarism?</button>
+        <Link to="/about">
+          <button class="descButton" id="aboutButton">About</button>
+        </Link> 
+        <Link  target='_blank' to="https://github.com/carlotran4/frankensteinGame">
+          <button class="descButton" id="sourceCodeButton">Source Code</button> 
+        </Link>
+        <Link to="/plagiarism">
+          <button class="descButton" id="plagiarismButton">Plagiarism?</button>
+        </Link>
       </div>
     )
   }

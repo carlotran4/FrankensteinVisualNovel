@@ -19,28 +19,8 @@
     {
       "role": "assistant",
       "content": "You approach your creation with a sense of curiosity and excitement. Your scientific mind compels you to unravel the mysteries that lie within this extraordinary being. You meticulously examine the physical construction of your creation, noting the intricate details of each body part you brought to life.\n\nAs you delve deeper into your analysis, you start to understand the immense potential and power this creature possesses. It becomes clear to you that you have created something beyond your wildest imagination. A mix of fear and fascination takes hold of your heart. \n\nWhat do you do next?\n\n%1. Conduct experiments to test the limits of your creation's strength and endurance.%\n\n%2. Engage in dialogue with your creation, attempting to understand its thoughts and feelings.%\n\n%3. Document your findings and research, hoping to share your amazing discovery with the world.%\n\n%4. Retreat from your laboratory and take a moment to reflect on the implications of your creation.%\n\n{Create an image of Victor Frankenstein examining his creation with awe and curiosity.}"
-    },
-    {
-      "role": "user",
-      "content": "Restart the novel with a different scenario"
-    },
-    {
-      "role": "assistant",
-      "content": "You are Victor Frankenstein, a young and ambitious scientist driven by an insatiable thirst for knowledge. One stormy night, as lightning illuminates the sky, you find yourself standing at the entrance of your laboratory. A surge of courage and determination courses through your veins as you prepare to embark on your most audacious experiment yet.\n\nWhat do you do?\n\n%1. Gather materials and start assembling body parts to create life.%\n\n%2. Question the ethical implications of your actions and hesitate before proceeding.%\n\n%3. Doubt your own abilities and abandon the idea of creating life altogether.%\n\n{Create an image of Victor Frankenstein standing in front of his laboratory, with stormy clouds overhead and sparks of lightning in the background.}"
     }
   ],
   "playData": [
-    {
-      "role": "system",
-      "content": "Please abide by the following bullet points at all times:\n- You are outputting text for a visual novel, which is based on the novel Frankenstein, by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- For this visual novel, provide a new scenario based on the previous choice made by the user.\n- You should provide interactive, text-based scenes. Do not create images.\n- First, provide a scenario, then provide 2-4 options, and then provide a prompt to create an image for the scenario. This prompt should be surrounded by curly braces. \n- Surround each option with percentage signs.\n- Each scenario should not exceed 50 tokens in length.\n- This visual novel should never end, and should keep providing new scenarios.\n"
-    },
-    {
-      "role": "user",
-      "content": "Restart the novel with a different scenario"
-    },
-    {
-      "role": "assistant",
-      "content": "You find yourself in your laboratory, surrounded by the tools and equipment that have become your obsession. The air is heavy with anticipation as you prepare to bring life to your creation. The lightning storm outside echoes the excitement within you, and you can feel the surge of electricity coursing through your veins.\n\nOption 1 - %Carefully assemble the body parts of your creation, ensuring every piece is in its rightful place before bringing it to life with a bolt of lightning.%\n\nOption 2 - %Doubt begins to creep into your mind as you question the consequences of playing God. You hesitate, unsure if you should proceed with your experiment.%\n\n{Create an image capturing the intensity and anticipation of Victor Frankenstein in his laboratory, surrounded by the instruments and equipment, with the lightning storm brewing outside, offering a glimpse of the power that awaits.}"
-    }
   ]
 }
