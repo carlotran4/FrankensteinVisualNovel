@@ -4,17 +4,12 @@ import "../css/layout.css"
 const Layout = () => {
   return (
     <>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
-
+      <div class="header">
+        <Link class="headerLink" to="/">Home</Link>
+        <Link class="headerLink" to="/about">About</Link>
+        <Link class="headerLink" to="/play">Play</Link>
+        <Link class="headerLink" to="/plagiarism">Plagiarism</Link>
+      </div>
       <Outlet />
     </>
   )

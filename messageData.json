@@ -19,6 +19,14 @@
     {
       "role": "assistant",
       "content": "You approach your creation with a sense of curiosity and excitement. Your scientific mind compels you to unravel the mysteries that lie within this extraordinary being. You meticulously examine the physical construction of your creation, noting the intricate details of each body part you brought to life.\n\nAs you delve deeper into your analysis, you start to understand the immense potential and power this creature possesses. It becomes clear to you that you have created something beyond your wildest imagination. A mix of fear and fascination takes hold of your heart. \n\nWhat do you do next?\n\n%1. Conduct experiments to test the limits of your creation's strength and endurance.%\n\n%2. Engage in dialogue with your creation, attempting to understand its thoughts and feelings.%\n\n%3. Document your findings and research, hoping to share your amazing discovery with the world.%\n\n%4. Retreat from your laboratory and take a moment to reflect on the implications of your creation.%\n\n{Create an image of Victor Frankenstein examining his creation with awe and curiosity.}"
+    },
+    {
+      "role": "user",
+      "content": "Restart the novel with a different scenario"
+    },
+    {
+      "role": "assistant",
+      "content": "You are Victor Frankenstein, a young and ambitious scientist eager to unlock the secrets of life itself. After countless nights of isolation in your laboratory, you have finally succeeded in reanimating a lifeless body. The once inert figure now stands before you, brought back to life through the power of your experiments.\n\nOverwhelmed with a mix of awe and apprehension, you hesitate for a moment, unsure of how to proceed.\n\nWhat do you do?\n\n%1. Greet your creation with kindness and compassion, offering guidance and support in its newfound existence.%\n\n%2. Recoil in horror at the eerie sight before you, unable to accept what you have brought into this world.%\n\n%3. Analyze and assess your creation's physical abilities and mental state, hoping to understand its nature better.%\n\n{Create an image of Victor Frankenstein standing in front of his newly-reanimated creature, contemplating its existence.}"
     }
   ],
   "playData": [

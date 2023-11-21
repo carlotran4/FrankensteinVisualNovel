@@ -1,3 +1,17 @@
-nav {
-    width: 10%;
+.header {
+    overflow: hidden;
+    background-image:  
+        linear-gradient(rgba(255, 255, 255, 0.08),rgba(255, 255, 255, 0.08)),
+        linear-gradient(#131613,#131613);
+
+}
+
+.headerLink {
+    float: left;
+    color: #f5f1ee;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
 }
