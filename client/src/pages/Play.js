@@ -103,6 +103,7 @@ function OpenAIRequest(props) {
     return(
         <>
             <h2>Waiting for ChatGPT (ChatGPT is slow these days)...</h2>
+            <h2>Hint: Press f11 to go fullscreen</h2>
         </>
     )
 }
