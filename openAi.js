@@ -3,7 +3,7 @@ import fs from "fs"
 
 export const completePrompt = async (prompt) =>{
     const openai = new OpenAI({
-    apiKey: process.env.OPEN_AI_KEY,
+        apiKey: process.env.OPEN_AI_KEY,
     });
     const json = JSON.parse(fs.readFileSync("./messageData.json","utf-8"))
     var storedMessages;
@@ -28,6 +28,7 @@ export const completePrompt = async (prompt) =>{
         top_p: 1,
         frequency_penalty: 0,
         presence_penalty: 1,
+        timeout:45
     }); }
     catch(e){
         console.log(e)

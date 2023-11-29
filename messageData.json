@@ -19,16 +19,20 @@
     {
       "role": "assistant",
       "content": "You approach your creation with a sense of curiosity and excitement. Your scientific mind compels you to unravel the mysteries that lie within this extraordinary being. You meticulously examine the physical construction of your creation, noting the intricate details of each body part you brought to life.\n\nAs you delve deeper into your analysis, you start to understand the immense potential and power this creature possesses. It becomes clear to you that you have created something beyond your wildest imagination. A mix of fear and fascination takes hold of your heart. \n\nWhat do you do next?\n\n%1. Conduct experiments to test the limits of your creation's strength and endurance.%\n\n%2. Engage in dialogue with your creation, attempting to understand its thoughts and feelings.%\n\n%3. Document your findings and research, hoping to share your amazing discovery with the world.%\n\n%4. Retreat from your laboratory and take a moment to reflect on the implications of your creation.%\n\n{Create an image of Victor Frankenstein examining his creation with awe and curiosity.}"
-    },
-    {
-      "role": "user",
-      "content": "Restart the novel with a different scenario"
-    },
-    {
-      "role": "assistant",
-      "content": "You are Victor Frankenstein, a young and ambitious scientist eager to unlock the secrets of life itself. After countless nights of isolation in your laboratory, you have finally succeeded in reanimating a lifeless body. The once inert figure now stands before you, brought back to life through the power of your experiments.\n\nOverwhelmed with a mix of awe and apprehension, you hesitate for a moment, unsure of how to proceed.\n\nWhat do you do?\n\n%1. Greet your creation with kindness and compassion, offering guidance and support in its newfound existence.%\n\n%2. Recoil in horror at the eerie sight before you, unable to accept what you have brought into this world.%\n\n%3. Analyze and assess your creation's physical abilities and mental state, hoping to understand its nature better.%\n\n{Create an image of Victor Frankenstein standing in front of his newly-reanimated creature, contemplating its existence.}"
     }
   ],
   "playData": [
+    {
+      "role": "system",
+      "content": "Please abide by the following bullet points at all times:\n- You are outputting text for a visual novel, which is based on the novel Frankenstein, by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- For this visual novel, provide a new scenario based on the previous choice made by the user.\n- You should provide interactive, text-based scenes. Do not create images.\n- First, provide a scenario, then provide 2-4 options, and then provide a prompt to create an image for the scenario. This prompt should be surrounded by curly braces. \n- Surround each option with percentage signs.\n- Each scenario should not exceed 50 tokens in length.\n- This visual novel should never end, and should keep providing new scenarios.\n"
+    },
+    {
+      "role": "user",
+      "content": "4"
+    },
+    {
+      "role": "assistant",
+      "content": "You contemplate the idea that the meaning of life is subjective, and each individual must find their own purpose and derive meaning from within.\n\nAs you delve into this perspective, you share your thoughts with your creation. You explain that life's significance cannot be universally defined but is rather a personal journey of self-discovery. Each individual must introspect, explore their passions, and uncover their unique purpose.\n\nTogether, you discuss the importance of introspection and self-reflection. You acknowledge that finding one's purpose can be a lifelong quest, requiring deep exploration and honesty with oneself. Your creation listens attentively, absorbing your words and reflecting on its own existence.\n\nIn the silence that follows, you catch a glimpse of something profound in your creation's eyes — a flicker of understanding, a spark of newfound clarity.\n\nSuddenly, an image comes to mind. What would best represent this moment of contemplation and introspection?\n\n{Draw a serene landscape with a winding path leading towards the horizon, symbolizing the journey of self-discovery.}"
+    }
   ]
 }
