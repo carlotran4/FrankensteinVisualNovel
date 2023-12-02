@@ -4,6 +4,7 @@ import fs from "fs"
 export const completePrompt = async (prompt) =>{
     const openai = new OpenAI({
         apiKey: process.env.OPEN_AI_KEY,
+        timeout: 45000
     });
     const json = JSON.parse(fs.readFileSync("./messageData.json","utf-8"))
     var storedMessages;
@@ -27,12 +28,11 @@ export const completePrompt = async (prompt) =>{
         max_tokens: 300,
         top_p: 1,
         frequency_penalty: 0,
-        presence_penalty: 1,
-        timeout:45
+        presence_penalty: 1
     }); }
     catch(e){
         console.log(e)
-        return "Sorry, there was an error. Please reload. %1.Sorry, there was an error. Please reload.% %2.Sorry, there was an error. Please reload.% {please reload}"
+        return "Sorry, there was an error. Please reload. %1.Sorry, there was an error. Please reload.%\n %2.Sorry, there was an error. Please reload.% {please reload}"
     }
 
     storedMessages.push(response.choices[0].message);
