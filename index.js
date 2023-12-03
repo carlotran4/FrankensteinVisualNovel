@@ -37,9 +37,12 @@ app.post("/api/openAiEndpoint/wipePlayData", (req,res) =>{
 
 app.post("/api/openAiEndpoint",jsonParser, async (req,res) => {
     const data = await completePrompt(req.body.message);
-
-    const jsonResponse = JSON.parse(data);
-
+    var jsonResponse;
+    try {
+      jsonResponse = JSON.parse(data)
+    } catch (error) {
+      jsonResponse = JSON.parse('{"scenario":"Error. Please Reload","options":["Please Reload"],"prompt":"TV Static"}')
+    }
     var imagePrompt = jsonResponse.prompt;
     if(imagePrompt == null){ 
       console.log("using default prompt")

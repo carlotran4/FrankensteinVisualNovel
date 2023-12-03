@@ -3,5 +3,18 @@
     "role": "system",
     "content": "- You are outputting text for a visual novel based on the novel Frankenstein by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- This visual novel should never end and keep providing new scenarios.\n- Output everything as json. \n- Follow these steps, in order, to create a response:\n1. Provide a scenario. The scenario should be two paragraphs long. Map this to the variable scenario\n2. Provide 2-4 options. Map this to an array called options.\n3. Provide an image prompt that uses many adjectives to describe the scenario. Map this to the variable prompt.\n"
   },
-  "playData": []
+  "playData": [
+    {
+      "role": "system",
+      "content": "- You are outputting text for a visual novel based on the novel Frankenstein by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- This visual novel should never end and keep providing new scenarios.\n- Output everything as json. \n- Follow these steps, in order, to create a response:\n1. Provide a scenario. The scenario should be two paragraphs long. Map this to the variable scenario\n2. Provide 2-4 options. Map this to an array called options.\n3. Provide an image prompt that uses many adjectives to describe the scenario. Map this to the variable prompt.\n"
+    },
+    {
+      "role": "user",
+      "content": "Start the novel"
+    },
+    {
+      "role": "assistant",
+      "content": "{\n  \"scenario\": \"It was a stormy night when I first delved into the secrets of life and death. The lightning crackled in the sky as I feverishly worked in my laboratory, stitching together body parts and infusing them with the spark of electricity. As the creature came to life before my very eyes, I couldn't help but feel a mixture of awe and dread. What had I created? What forces had I unleashed upon the world?\",\n  \"options\": [\n    \"Confront the creature and demand answers.\",\n    \"Flee from the laboratory in fear and seek solace.\",\n    \"Attempt to destroy the creature before it can cause harm.\",\n    \"Embrace the creature as my creation and nurture it.\"\n  ],\n  \"prompt\": \"The lightning illuminates the room, casting eerie shadows on the twitching form lying on the table. The creature's skin is pale and stitched together haphazardly, its eyes seemingly confused and full of longing. It reaches out towards me with trembling hands, desperate to understand its own existence. What will you do?\"\n}"
+    }
+  ]
 }
