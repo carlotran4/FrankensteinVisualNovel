@@ -1,46 +1,7 @@
 {
-  "initialData": [
-    {
-      "role": "system",
-      "content": "Please abide by the following bullet points at all times:\n- You are outputting text for a visual novel, which is based on the novel Frankenstein, by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- For this visual novel, provide a new scenario based on the previous choice made by the user.\n- You should provide interactive, text-based scenes. Do not create images.\n- First, provide a scenario, then provide 2-4 options, and then provide a prompt to create an image for the scenario. This prompt should be surrounded by curly braces. \n- Surround each option with percentage signs.\n- Each scenario should not exceed 50 tokens in length.\n- This visual novel should never end, and should keep providing new scenarios.\n"
-    },
-    {
-      "role": "user",
-      "content": "start the novel"
-    },
-    {
-      "role": "assistant",
-      "content": "You are Victor Frankenstein, a young scientist obsessed with unlocking the secrets of life itself. After years of tireless experimentation, you have finally created a living being from lifeless body parts. You stand before your creation, unsure of what to do next.\n\nWhat do you do?\n\n%1. Embrace and accept your creation as your own, taking responsibility for its well-being.%\n\n%2. Reject and abandon your creation, overwhelmed with fear and disgust.%\n\n%3. Analyze and study your creation, trying to understand its capabilities and limitations.%\n\n{Create an image of Victor Frankenstein standing before his creation.}"
-    },
-    {
-      "role": "user",
-      "content": "3"
-    },
-    {
-      "role": "assistant",
-      "content": "You approach your creation with a sense of curiosity and excitement. Your scientific mind compels you to unravel the mysteries that lie within this extraordinary being. You meticulously examine the physical construction of your creation, noting the intricate details of each body part you brought to life.\n\nAs you delve deeper into your analysis, you start to understand the immense potential and power this creature possesses. It becomes clear to you that you have created something beyond your wildest imagination. A mix of fear and fascination takes hold of your heart. \n\nWhat do you do next?\n\n%1. Conduct experiments to test the limits of your creation's strength and endurance.%\n\n%2. Engage in dialogue with your creation, attempting to understand its thoughts and feelings.%\n\n%3. Document your findings and research, hoping to share your amazing discovery with the world.%\n\n%4. Retreat from your laboratory and take a moment to reflect on the implications of your creation.%\n\n{Create an image of Victor Frankenstein examining his creation with awe and curiosity.}"
-    },
-    {
-      "role": "user",
-      "content": "Restart the novel with a different scenario"
-    },
-    {
-      "role": "assistant",
-      "content": "You are Victor Frankenstein, a brilliant and ambitious scientist driven by the desire to uncover the secrets of life. After countless experiments, you have finally succeeded in bringing forth your creation - a being composed of various body parts, brought to life through your scientific prowess.\n\nUpon witnessing the animation of your creation, a mix of awe, fascination, and fear engulfs your soul. As your creature gazes at you with curious eyes, you know that its existence is both a triumph and a burden.\n\nWhat path will you take?\n\n%1. Accept your responsibility as a creator and mentor your creation, guiding it towards understanding morality and compassion.%\n\n%2. Reject and abandon your creation out of terror and remorse, seeking solace and isolation from the world.%\n\n%3. Attempt to control your creation, treating it as a mere experiment and subjecting it to your commands and orders.%\n\n{Create an image of Victor Frankenstein facing his creation, torn between conflicting emotions.}"
-    }
-  ],
-  "playData": [
-    {
-      "role": "system",
-      "content": "Please abide by the following bullet points at all times:\n- You are outputting text for a visual novel, which is based on the novel Frankenstein, by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- For this visual novel, provide a new scenario based on the previous choice made by the user.\n- You should provide interactive, text-based scenes. Do not create images.\n- First, provide a scenario, then provide 2-4 options, and then provide a prompt to create an image for the scenario. This prompt should be surrounded by curly braces. \n- Surround each option with percentage signs.\n- Each scenario should not exceed 50 tokens in length.\n- This visual novel should never end, and should keep providing new scenarios.\n"
-    },
-    {
-      "role": "user",
-      "content": "3"
-    },
-    {
-      "role": "assistant",
-      "content": "You choose to attempt to control your creation, treating it as a mere experiment and subjecting it to your commands and orders.\n\nDriven by your ambition and desire for control, you begin conducting experiments on your creation, subjecting it to various tests and procedures. You believe that by bending its will to yours, you can assert your dominance over this creature that you brought to life.\n\nHowever, as you delve deeper into your attempts to control your creation, you start to realize the immense power and intelligence it possesses. It becomes clear that your creature is not a mindless puppet, but rather a sentient being with its own desires and emotions.\n\nWhat will you do now?\n\n%1. Continue your pursuit to control and manipulate your creation, regardless of the consequences.%\n\n%2. Reflect on your actions and try to find a way to understand and coexist with your creation.%\n\n%3. Realize the danger of your actions and decide to destroy your creation before it poses a threat to humanity.%\n\n{Create an image of Victor Frankenstein, torn between his desire for control and the growing realization of the consequences of his actions.}"
-    }
-  ]
+  "initialData": {
+    "role": "system",
+    "content": "- You are outputting text for a visual novel based on the novel Frankenstein by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- This visual novel should never end and keep providing new scenarios.\n- Output everything as json. \n- Follow these steps, in order, to create a response:\n1. Provide a scenario. The scenario should be two paragraphs long. Map this to the variable scenario\n2. Provide 2-4 options. Map this to an array called options.\n3. Provide an image prompt that uses many adjectives to describe the scenario. Map this to the variable prompt.\n"
+  },
+  "playData": []
 }

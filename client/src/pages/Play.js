@@ -1,4 +1,4 @@
-import React from "react" 
+import React, { useState } from "react" 
 import loadingGif from "../images/loading.gif";
 import "../css/play.css"
 
@@ -55,7 +55,7 @@ function Choices(props){
         return(
             <div className="individualButtonDiv">
                 <button className="choiceButtons" onClick={()=>{
-                    props.setMessage({content: choice.substring(0,1)});
+                    props.setMessage({content: choice});
                     props.setIsScenario(true);
                     props.setJsonData(null);
                     }}>{choice}</button> 
@@ -109,7 +109,8 @@ function OpenAIRequest(props) {
 }
 
 export default function Play() {
-    
+    const [isDone, setIsDone] = useState(false)
+
     React.useEffect( () => {
         console.log("Mounted")
         fetch("/api/openAiEndpoint/wipePlayData",{
@@ -118,13 +119,18 @@ export default function Play() {
                 'Content-Type':'application/json'
             }
         })
-
+        setIsDone(true);
     },[])
 
 
+    if(isDone) return(
+        <>
+            <OpenAIRequest startMessage={{content:"Start the novel"}}/>
+        </>
+    )
     return(
         <>
-            <OpenAIRequest startMessage={{content:"Restart the novel with a different scenario"}}/>
+            <h1>Wiping Play Data</h1>
         </>
     )
 }

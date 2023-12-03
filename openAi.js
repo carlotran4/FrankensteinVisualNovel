@@ -9,10 +9,9 @@ export const completePrompt = async (prompt) =>{
     const json = JSON.parse(fs.readFileSync("./messageData.json","utf-8"))
     var storedMessages;
     if(!json.playData.length == 0){
-        storedMessages = json.playData;
-        storedMessages.unshift(json.initialData[0]);
+        storedMessages = json.playData.slice();
     }
-    else storedMessages = json.initialData;
+    else storedMessages = json.initialData.slice();
 
     console.log("Beginning text generation")
     storedMessages.push({
@@ -25,22 +24,28 @@ export const completePrompt = async (prompt) =>{
         model: "gpt-3.5-turbo",
         messages: storedMessages,
         temperature: 1,
-        max_tokens: 300,
+        max_tokens: 512,
         top_p: 1,
         frequency_penalty: 0,
         presence_penalty: 1
     }); }
     catch(e){
         console.log(e)
-        return "Sorry, there was an error. Please reload. %1.Sorry, there was an error. Please reload.%\n %2.Sorry, there was an error. Please reload.% {please reload}"
+        return '{"scenario":"Error. Please Reload","options":["Please Reload"],"prompt":"TV Static"}'
     }
 
     storedMessages.push(response.choices[0].message);
     storedMessages = storedMessages.slice(-2);
-    storedMessages.unshift(json.initialData[0]);
+    storedMessages.unshift({
+        "role": "system",
+        "content": "- You are outputting text for a visual novel based on the novel Frankenstein by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- This visual novel should never end and keep providing new scenarios.\n- Output everything as json. \n- Follow these steps, in order, to create a response:\n1. Provide a scenario. The scenario should be two paragraphs long. Map this to the variable scenario\n2. Provide 2-4 options. Map this to an array called options.\n3. Provide an image prompt that uses many adjectives to describe the scenario. Map this to the variable prompt.\n"
+      });
 
     const jsonToWrite = {
-        initialData: json.initialData,
+        initialData: {
+            "role": "system",
+            "content": "- You are outputting text for a visual novel based on the novel Frankenstein by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- This visual novel should never end and keep providing new scenarios.\n- Output everything as json. \n- Follow these steps, in order, to create a response:\n1. Provide a scenario. The scenario should be two paragraphs long. Map this to the variable scenario\n2. Provide 2-4 options. Map this to an array called options.\n3. Provide an image prompt that uses many adjectives to describe the scenario. Map this to the variable prompt.\n"
+          },
         playData: storedMessages
     }
 
