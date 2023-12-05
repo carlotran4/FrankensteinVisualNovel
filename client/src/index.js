@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './css/index.css';
 import Layout from './pages/Layout.js'
 import Home from './pages/Home.js';
-import About from './pages/About.js'
 import Play from './pages/Play.js'
 
 export default function App() {
@@ -12,7 +11,6 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
           <Route path="play" element={<Play />} />
         </Route>
       </Routes>

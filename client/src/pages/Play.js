@@ -3,7 +3,6 @@ import loadingGif from "../images/loading.gif";
 import "../css/play.css"
 
 function StabilityRequest(props) {
-    console.log(props.message);
     const [data, setData] = React.useState(null);
     React.useEffect(()=>{
         fetch("/api/stabilityEndpoint",{
@@ -112,7 +111,6 @@ export default function Play() {
     const [isDone, setIsDone] = useState(false)
 
     React.useEffect( () => {
-        console.log("Mounted")
         fetch("/api/openAiEndpoint/wipePlayData",{
             method: 'Post',
             headers: {

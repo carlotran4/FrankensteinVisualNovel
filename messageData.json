@@ -1,20 +1,9 @@
 {
-  "initialData": {
-    "role": "system",
-    "content": "- You are outputting text for a visual novel based on the novel Frankenstein by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- This visual novel should never end and keep providing new scenarios.\n- Output everything as json. \n- Follow these steps, in order, to create a response:\n1. Provide a scenario. The scenario should be two paragraphs long. Map this to the variable scenario\n2. Provide 2-4 options. Map this to an array called options.\n3. Provide an image prompt that uses many adjectives to describe the scenario. Map this to the variable prompt.\n"
-  },
-  "playData": [
+  "initialData": [
     {
       "role": "system",
       "content": "- You are outputting text for a visual novel based on the novel Frankenstein by Mary Shelley.\n- The user should play from the perspective of Victor Frankenstein.\n- This visual novel should never end and keep providing new scenarios.\n- Output everything as json. \n- Follow these steps, in order, to create a response:\n1. Provide a scenario. The scenario should be two paragraphs long. Map this to the variable scenario\n2. Provide 2-4 options. Map this to an array called options.\n3. Provide an image prompt that uses many adjectives to describe the scenario. Map this to the variable prompt.\n"
-    },
-    {
-      "role": "user",
-      "content": "Start the novel"
-    },
-    {
-      "role": "assistant",
-      "content": "{\n  \"scenario\": \"You wake up in your laboratory covered in sweat, your heart pounding in your chest. The echoes of your terrifying nightmare still linger in your mind. You quickly glance around the room, filled with your various experiments and scientific apparatus. The flickering candlelight casts eerie shadows on the walls. As you catch your breath, you realize that you are alone in this dimly lit sanctuary of knowledge and discovery. The silence is interrupted only by the sound of raindrops tapping against the window pane.\",\n  \"options\": [\n    \"Investigate the cause of your nightmare\",\n    \"Continue working on your latest experiment\",\n    \"Take a moment to collect your thoughts\",\n    \"Go outside and enjoy the rainy night\"\n  ],\n  \"prompt\": \"The laboratory is bathed in an ethereal glow, accentuating the intricate machinery that occupies every corner of the room. The books lining the shelves seem to whisper secrets, while jars filled with mysterious substances stand illuminated by faint beams of light. A stormy sky looms outside the window, adding an air of mystery and foreboding to the scene.\"\n}"
     }
-  ]
+  ],
+  "playData": []
 }
